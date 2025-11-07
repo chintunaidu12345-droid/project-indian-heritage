@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small custom styles and animations */
+.fade-up { transform: translateY(18px); opacity: 0; transition: all 600ms cubic-bezier(.2,.9,.3,1); }
+.fade-up.in-view { transform: translateY(0); opacity: 1; }
+.nav-link-active { color: rgb(180 83 9); } /* amber-700 */
+/* mobile nav backdrop */
+.backdrop-blur-sm { backdrop-filter: blur(6px); }
+
+/* small helper */
+html, body, #root { height: 100%; }
+body { @apply antialiased text-gray-800 bg-amber-50 font-sans; }
